@@ -77,7 +77,7 @@ __ENTER LENGHT OF PASSWORD__ :
 
 <br>
 <p align="center">
-<img width="50%" src="https://user-images.githubusercontent.com/49580304/96586353-b9b4e800-1295-11eb-8776-06e37e3509ee.jpg"/>
+<img width="48%" src="https://user-images.githubusercontent.com/49580304/96586353-b9b4e800-1295-11eb-8776-06e37e3509ee.jpg"/>
 <img width="45%" src="https://user-images.githubusercontent.com/49580304/96586335-b3267080-1295-11eb-9a51-43343da80f35.jpg"/>
 </p>
 
