@@ -68,7 +68,7 @@ P-gen tool is an python based script which create/generate randrom passwords in 
 * `sudo apt update -y`
 * `sudo apt install python3`
 * `sudo apt install python3-pip`
-* `pip3 install random PyQt5`
+* `pip3 install PyQt5`
 * `./p-gen-gui.py`
 
 ```
