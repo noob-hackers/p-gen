@@ -29,10 +29,12 @@ P-gen tool is an python based script which create/generate randrom passwords in 
 ## AVAILABLE ON :
 
 * Termux
+* Linux
 
 ### TESTED ON :
 
 * Termux
+* Kubuntu Linux
 
 ### REQUIREMENTS :
 * internet
@@ -60,6 +62,15 @@ P-gen tool is an python based script which create/generate randrom passwords in 
 * `cd p-gen`
 * `ls`
 * `python p-gen.py`
+
+## INSTALLAION [Linux] :
+
+* `sudo apt update -y`
+* `sudo apt install python3`
+* `sudo apt install python3-pip`
+* `pip3 install random PyQt5`
+* `./p-gen-gui.py`
+
 ```
 [+]--Enter the lenghth of password you want
 
@@ -80,6 +91,10 @@ __ENTER LENGHT OF PASSWORD__ :
 <img width="48%" src="https://user-images.githubusercontent.com/49580304/96586353-b9b4e800-1295-11eb-8776-06e37e3509ee.jpg"/>
 <img width="45%" src="https://user-images.githubusercontent.com/49580304/96586335-b3267080-1295-11eb-9a51-43343da80f35.jpg"/>
 </p>
+
+## SCREEN SHOTS [Linux] :
+![linux](gui/ss.png)
+
 
 ## WATCH VIDEO [Termux]
 
