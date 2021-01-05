@@ -4,6 +4,7 @@ import random
 import sys
 from PyQt5.QtWidgets import QMainWindow, QAction, qApp, QApplication, QLabel, QPushButton, QLineEdit, QPlainTextEdit
 from PyQt5.QtGui import QIcon, QFont, QClipboard, QIntValidator
+from qt_material import apply_stylesheet
 
 # Maximum length
 maxchar = 1500
@@ -30,32 +31,32 @@ class Example(QMainWindow):
         self.Title.adjustSize()
 
         generate = QPushButton("Generate", self)
-        generate.move(128, 105)
+        generate.setGeometry(113,107,130,40)
         generate.setIcon(QIcon('gui/generate.png'))
         generate.clicked.connect(self.Generate)
 
         minusicon = QPushButton("-",self)
-        minusicon.setGeometry(102,70,32,32)
+        minusicon.setGeometry(95,70,40,40)
         minusicon.clicked.connect(self.decrease)
 
         plusicon = QPushButton("+",self)
-        plusicon.setGeometry(210,70,32,32)
+        plusicon.setGeometry(209,70,40,40)
         plusicon.clicked.connect(self.increase)
 
         copypass = QPushButton('Copy', self)
-        copypass.move(128,250)
+        copypass.move(128,253)
         copypass.setIcon(QIcon('gui/copy.png'))
         copypass.clicked.connect(self.copy)
 
         self.charlen = QLineEdit(self)
-        self.charlen.setGeometry(137, 70, 70, 32)
+        self.charlen.setGeometry(137, 70, 70, 36)
         self.charlen.setText('12')
 
         self.onlyInt = QIntValidator()
         self.charlen.setValidator(self.onlyInt)
 
         self.passwordout = QPlainTextEdit(self)
-        self.passwordout.setGeometry(60,140,240,100)
+        self.passwordout.setGeometry(60,149,240,100)
 
         self.setGeometry(300, 300, 350, 300)
         self.setWindowTitle('P-GEN GUI')
@@ -96,8 +97,10 @@ class Example(QMainWindow):
     	
 
 
+
 def main():
     app = QApplication(sys.argv)
+    apply_stylesheet(app, theme='light_pink.xml')
     ex = Example()
     sys.exit(app.exec_())
 
