@@ -92,7 +92,7 @@ class Example(QMainWindow):
     def copy(self):
     	cb = QApplication.clipboard()
     	cb.clear(mode=cb.Clipboard )
-    	cb.setText(self.passwordout.PlainText(), mode=cb.Clipboard)
+    	cb.setText(self.passwordout.toPlainText(), mode=cb.Clipboard)
     	
 
 
