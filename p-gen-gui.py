@@ -10,14 +10,13 @@ from qt_material import apply_stylesheet
 maxchar: int = 1500
 
 # Characters
-char: str = "abcdefghijklmnopqrstuvwxyz1234567890@#$%&*^"
+char: str = 'abcdefghijklmnopqrstuvwxyz1234567890@#$%&*^'
 
 
 class Example(QMainWindow):
 
     def __init__(self):
         super().__init__()
-
         self.initUI()
 
     def initUI(self):
@@ -64,19 +63,19 @@ class Example(QMainWindow):
         self.setWindowTitle('P-GEN GUI')
         self.show()
 
-    def increase(self):
+    def increase(self) -> object:
         if int(self.charlen.text()) < maxchar:
             self.charlen.setText(str(int(self.charlen.text()) + 1))
         else:
             self.charlen.setText(str(maxchar))
 
-    def decrease(self):
+    def decrease(self) -> object:
         if int(self.charlen.text()) > 2:
             self.charlen.setText(str(int(self.charlen.text()) - 1))
         else:
             self.charlen.setText('1')
 
-    def Generate(self):
+    def Generate(self) -> object:
         if int(self.charlen.text()) > maxchar:
             self.charlen.setText(str(maxchar))
 
@@ -90,7 +89,7 @@ class Example(QMainWindow):
 
         self.passwordout.setPlainText(password)
 
-    def copy(self):
+    def copy(self) -> object:
         cb = QApplication.clipboard()
         cb.clear(mode=cb.Clipboard)
         cb.setText(self.passwordout.toPlainText(), mode=cb.Clipboard)
